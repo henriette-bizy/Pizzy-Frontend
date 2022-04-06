@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+*{
+ box-sizing: border-box;
+ margin:0;
+ font-family: Poppins;
+
+}
+
+body{
+    background-image: url(./background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    color: orange;
+    font-family: Tangerine;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 48px;
+}
+.button_centered{
+    /* position: relative; */
+    margin-left: 35%;
+    margin-top: 350px;
+}
+.button_centered button{
+    width: 250px;
+    height: 60px;
+    margin-right: 30px;
+    background-color: orange;
+    border: none;
+    font-size: 16px;
+}
+p{
+    font-size: 24px;
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 12px;
+}
