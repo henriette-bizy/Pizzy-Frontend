@@ -1,28 +1,52 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+// import Home from './Home'
+import Menu from './Menu'
 
 class App extends React.Component{
-  constructor(props){
-    super(props);
-    this.state = {foodName:'..........'}
-  }
-    EventChanger(foodName){
-      this.setState({foodName:foodName});
-    }
-  
-
 
   render(){
+ const pizzaTypes = [
+{
+pizzyImage: './images/sausagePizza.jpg',
+pizzyType:'Sausage Pizza',
+pizzyPrice:'12 000 RWF'
+},
+{
+  pizzyImage: './images/pepperoniPizza.jpg',
+  pizzyType:'Pepperoni Pizza',
+  pizzyPrice:'15 000 RWF'
+}
+,
+{
+  pizzyImage: './images/DetroitPizza.jpg',
+  pizzyType:'Detroit Pizza',
+  pizzyPrice:'13 000 RWF' 
+},
+{
+  pizzyImage: './images/chicagoPizza.jpg',
+  pizzyType:'Chicago Pizza',
+  pizzyPrice:'15 000 RWF'  
+},
+{
+  pizzyImage:'./images/GreekPizza.png',
+  pizzyType:'Greek Pizza',
+  pizzyPrice:'10 000 RWF'   
+}
+
+ ]
+
+
   return (
     <div className="App">
-    <h1>Pizzy. </h1>
-     <div className='button_centered'>  
 
-     <p>You have just orderd {this.state.foodName}</p>
-    <button onClick={()=>{this.EventChanger("Peperoni Pizza")}}>Order Pepperoni</button>
-    <button onClick={()=>{this.EventChanger("Sausage Pizza")}}>Order Sausage</button>
-    </div>
+
+  {pizzaTypes.map((pizzaItem)=>{
+    return (
+      <Menu pizzyImage= {pizzaItem.pizzyImage} pizzyType={pizzaItem.pizzyType}  pizzyPrice={pizzaItem.pizzyPrice}/>  
+    )
+  })}
+     
     </div>
   );
 }
