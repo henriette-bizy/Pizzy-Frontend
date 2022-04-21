@@ -15,12 +15,33 @@ class Home extends React.Component{
   render(){
   return (
     <div className="Home">
-    <h1>Pizzy. </h1>
-     <div className='button_centered'>  
+      <div className='container'>
+        <div className='navbar'>
+          <div className='logo'>
+      <h1>Pizzy. </h1>
+      </div>
 
-     <p>You have just orderd {this.state.foodName}</p>
-    <button onClick={()=>{this.EventChanger("Peperoni Pizza")}}>Order Pepperoni</button>
-    <button onClick={()=>{this.EventChanger("Sausage Pizza")}}>Order Sausage</button>
+      <div className='links'>
+     <ul>
+       <li><a href="#"> Home </a></li>
+       <li><a href="#"> Menu </a></li>
+       <li><a href="#"> About </a></li>
+       <li><a href="#"> Contact</a></li>
+     </ul>
+      </div>
+
+      <div className='nav-buttons'>
+      <button> Sign in </button>
+      </div>
+    </div>
+
+
+    <div className='Home-content'>
+     <div className='left_content'>
+    <p>Get the tasty Slice </p>
+    <p> at Pizzy.com</p>
+     </div>
+    </div>
     </div>
     </div>
   );
