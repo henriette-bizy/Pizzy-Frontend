@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import Home from './Home'
 import Menu from './Menu'
+import Form from './form'
 
 class App extends React.Component{
 
@@ -37,7 +38,8 @@ pizzyPrice:'12 000 RWF'
  ]
   return (
     <div className="App">
-  <Home />
+      <Form />
+  {/* <Home /> */}
   
    {/* {pizzaTypes.map((pizzaItem)=>{
      return ( 
