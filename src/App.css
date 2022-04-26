@@ -223,6 +223,7 @@ width: 350px;
 height: 40px;
 border: 1px solid black;
 display: block;
+margin-bottom:12px;
 }
 .form .part2 form label{
     display: block;
@@ -231,4 +232,12 @@ display: block;
     text-align: center;
     margin: 12px;
 }
+.form .part2 input[type="submit"]{
+    margin-top: 15px;
+    width: 35%;
+    margin-left: 80px;
+}
+.form .signIn{
+padding-top: 25px;
 
+}
