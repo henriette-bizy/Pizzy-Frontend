@@ -188,7 +188,7 @@
 .form {
     width: 60%;
     margin: auto;
-    height: 70vh;
+    height: 75vh;
     margin-top: 130px;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -206,24 +206,24 @@
 }
 .form .part2 form{
     width: 70%;
-    height: 50vh;
+    height: 59vh;
     margin: auto;
 }
 .form .part2 .form-buttons{
- width: 70%;
+ width: 60%;
  margin: auto;
 }
 .form .part2 .form-buttons button{
- width: 200px;
+ width: 180px;
  height:50px;    
  margin-left: 20px;
 }
 .form .part2 form input{
-width: 350px;
+width: 320px;
 height: 40px;
 border: 1px solid black;
 display: block;
-margin-bottom:12px;
+margin-bottom:10px;
 }
 .form .part2 form label{
     display: block;
@@ -233,11 +233,15 @@ margin-bottom:12px;
     margin: 12px;
 }
 .form .part2 input[type="submit"]{
-    margin-top: 15px;
+    margin-top:25px;
     width: 35%;
-    margin-left: 80px;
+    margin-left: 85px;
 }
-.form .signIn{
+.form .signIn{ 
 padding-top: 25px;
-
+}
+.Error p{
+    color:red;
+    margin-bottom: 0px;
+    padding: 0;
 }
