@@ -245,3 +245,38 @@ padding-top: 25px;
     margin-bottom: 0px;
     padding: 0;
 }
+.Menu_title {
+    width:25%;
+    margin: auto;
+    display: flex;
+}
+.Menu_title .award {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 63px;
+    vertical-align: middle;
+    border-radius: 10px;
+    background-color: orange;
+}
+.Menu_title h2{
+    padding-left: 12px;
+    line-height: 50px;
+    vertical-align: 5px;
+}
+.Menu_body{
+width: 80%;
+display: flex;
+flex-direction:column;
+margin: auto;
+}
+.Menut_body .card{
+display: inline-block;
+width: 30%;
+height:250px;
+border: 1px solid black;
+}
+.Menu_body  .card img{
+    width: 150px;
+    height: 150px;
+}

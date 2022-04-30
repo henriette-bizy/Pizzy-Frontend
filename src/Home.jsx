@@ -1,9 +1,6 @@
 import './App.css';
 import React from 'react';
-import {FontAwesome} from  "react-icons/fa"
-import {FaTwitter} from "react-icons/fa"
-import {FaAngleRight} from 'react-icons/fa'
-import {FaArrowRight} from 'react-icons/fa'
+import {FontAwesome,FaAngleRight,FaArrowRight, FaAward} from  "react-icons/fa"
 
 class Home extends React.Component{
   constructor(props){
@@ -49,10 +46,42 @@ class Home extends React.Component{
     <p> at Pizzy.com</p>
     <div className='arrow_right'>
      <FaArrowRight/>
+     
     </div>
      </div>
     </div> 
      <img src= {require("./images/pizzaP.png")} className="pizzaHome"></img>
+
+     <div className='Menu_content'> 
+      <div className='Menu_title'>
+        <div className='award'>
+      <FaAward size="30px" />
+      </div>
+      <h2>What's on our Menu! </h2>
+      </div>
+
+      <div className='Menu_body'>
+      <div className='card'> 
+<img src={require("./images/menu-1.png")}>
+</img>
+<div className='card'>
+<img src={require("./images/menu-2.png")}></img>
+</div>
+<div className='card'>
+<img src={require("./images/menu-3.png")}></img>
+</div>
+<div className='card'>
+<img src={require("./images/menu-4.png")}></img>
+</div>
+<div className='card'>
+<img src={require("./images/menu-5.png")}></img>
+</div>
+<div className='card'>
+<img src={require("./images/menu.png")}></img>
+</div>
+      </div>
+      </div>
+     </div>
     </div>
     
   );

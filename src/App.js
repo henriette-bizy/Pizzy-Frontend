@@ -38,8 +38,8 @@ pizzyPrice:'12 000 RWF'
  ]
   return (
     <div className="App">
-      <Form />
-  {/* <Home /> */}
+      {/* <Form /> */}
+  <Home />
   
    {/* {pizzaTypes.map((pizzaItem)=>{
      return ( 
