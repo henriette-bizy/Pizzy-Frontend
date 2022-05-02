@@ -265,18 +265,122 @@ padding-top: 25px;
     vertical-align: 5px;
 }
 .Menu_body{
-width: 80%;
-display: flex;
-flex-direction:column;
+width: 96%;
 margin: auto;
+display: flex;
+flex-direction:row;
+padding: 30px;
+margin-left: 50px;
 }
-.Menut_body .card{
-display: inline-block;
-width: 30%;
-height:250px;
-border: 1px solid black;
+.Menu_body .card{   
+width: 20%;
+height:360px;
+/* border: 1px solid black; */
+margin: 20px;
+background-color: rgba(255, 166, 0, 0.158);
+box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.Menu_body  .card img{
-    width: 150px;
-    height: 150px;
+.card img{
+    width: 230px;
+    height: 230px;
+    margin-left:35px ;
+}
+.card .price{
+    width: 45px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    text-align: center;
+    line-height: 47px;
+    vertical-align: middle;
+    position: relative;
+    left: 79%;
+    bottom: 30%;
+}
+.card .new-menu{
+    position: relative;
+    left: 90%;
+    bottom: 93%;
+}
+.card .new-menu p {
+    font-size: 10px;
+    position: absolute;
+    left: 4%;
+    top: 32%;
+    color: white;
+    font-weight: bold;
+}
+.card .pizzy-name{
+    width: 50%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 18px;
+}
+.Menu-footer{
+    float: right;
+    
+    
+}
+.Menu-footer .left-angle{
+    width: 50px;
+    height: 30px;
+    background-color: rgba(255, 166, 0, 0);
+    margin-left:3px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.Menu-footer .right-angle{
+    width: 50px;
+    height: 30px;
+    color: black;
+    background-color: orange;
+    margin-right: 194px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.19);
+}
+.About-content {
+    width: 80%;
+    margin: auto;
+}
+.About-content .About-title{
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.About-content .About-title .Question{
+width: 40px;
+height: 40px;
+line-height: 42px;
+text-align: center;
+vertical-align: middle;
+background-color: orange;
+border-radius: 10px;
+margin-right: 20px;
+}
+.About-content .left-content{
+    width: 40%;
+    height: 400px;
+    float: left;
+}
+.About-content .right-content{
+    width: 45%;
+    height: 400px;
+    background-color: orange;
+    float: right;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.About-content .right-content img{
+    width: 100%;
+    height:400px ;
+}
+.About-content .right-content-image img{
+    width: 50px;
+    height: ;
+    position: absolute;
+    left: 30%;
+    bottom: 30%;
 }
