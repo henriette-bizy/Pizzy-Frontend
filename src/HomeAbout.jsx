@@ -5,6 +5,7 @@ class HomeAbout extends React.Component{
 render(){
     return(
     
+        <div className="About">
         <div className="About-content">
         <div className="About-title">
             <div className="Question">
@@ -29,13 +30,13 @@ render(){
         </p>
         </div>
         <div className="right-content">
-        <img src={require("./images/chef.jpg")} alt="" />
+        {/* <img src={require("./images/chef.jpg")} alt="" /> */}
         <div className="right-content-image">
-        <img src={require("./images/menu-5.png")} alt="" />
+        {/* <img src={require("./images/menu-5.png")} alt="" />x` */}
         </div>
         </div>
         </div>
-
+        </div>
 
 
     )

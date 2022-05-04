@@ -4,6 +4,8 @@ import Home from './Home'
 import Menu from './Menu'
 import Form from './form'
 
+
+
 class App extends React.Component{
 
   render(){
@@ -41,7 +43,7 @@ pizzyPrice:'12 000 RWF'
       {/* <Form /> */}
   <Home />
   
-   {/* {pizzaTypes.map((pizzaItem)=>{
+   {pizzaTypes.map((pizzaItem)=>{
      return ( 
       <Menu pizzyImage= {pizzaItem.pizzyImage} pizzyType={pizzaItem.pizzyType}  pizzyPrice={pizzaItem.pizzyPrice}/>  
     )
@@ -50,7 +52,7 @@ pizzyPrice:'12 000 RWF'
    } 
   
    )} 
-      */}
+     
     </div>
   );
 }
