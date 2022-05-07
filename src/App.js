@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import Home from './Home'
-import Menu from './Menu'
+// import Menu from './Menu'
 import Form from './form'
 
 
@@ -43,16 +43,12 @@ pizzyPrice:'12 000 RWF'
       {/* <Form /> */}
   <Home />
   
-   {pizzaTypes.map((pizzaItem)=>{
+   {/* {pizzaTypes.map((pizzaItem)=>{
      return ( 
       <Menu pizzyImage= {pizzaItem.pizzyImage} pizzyType={pizzaItem.pizzyType}  pizzyPrice={pizzaItem.pizzyPrice}/>  
     )
-
-
    } 
-  
-   )} 
-     
+   )}       */}
     </div>
   );
 }

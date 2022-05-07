@@ -1,9 +1,7 @@
-// import React from "react";
-// class Menu extends React.Component{
+import React from "react";
+class Menu extends React.Component{
 
-
-
-// render(){
+render(){
 //      const pizzaTypes = [
 // {
 // pizzyImage: './images/sausagePizza.jpg',
@@ -31,30 +29,26 @@
 //   pizzyType:'Greek Pizza',
 //   pizzyPrice:'10 000 RWF'   
 // }
-
 //  ]
+
 //  {pizzaTypes.map((pizzaItem)=>{
   
-//     return(
-//         <div className="menu-list">
-//     <div className="Pizzy-component-card">
-//      <div className="Pizzy-image">
-//      <img src = {require(`${pizzaItem.pizzyImage}`)} alt="the sausage pizza"/>
-//      </div>
-//      <div className="Pizzy-content">
-//       <p> {pizzaItem.pizzyType}</p>
-//       <p> Cost  : {pizzaItem.pizzyPrice}</p>
-//      </div>
-//      <div className="pizzy-button">
-//     <button> Order Now</button>
-//      </div>
-//     </div>
-//     </div>
-//     );
-//  }
-//  )
-//  }
-// }
-
-
-
+    return(
+        <div className="menu-list">
+    <div className="Pizzy-component-card">
+     <div className="Pizzy-image">
+     {/* <img src = {require(`${pizzaItem.pizzyImage}`)} alt="the sausage pizza"/> */}
+     </div>
+     <div className="Pizzy-content">
+      {/* <p> {pizzaItem.pizzyType}</p> */}
+      {/* <p> Cost  : {pizzaItem.pizzyPrice}</p> */}
+     </div>
+     <div className="pizzy-button">
+    <button> Order Now</button>
+     </div>
+    </div>
+    </div>
+    )
+ }
+}
+export default Menu;

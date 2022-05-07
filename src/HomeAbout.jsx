@@ -32,7 +32,38 @@ render(){
         <div className="right-content">
         {/* <img src={require("./images/chef.jpg")} alt="" /> */}
         <div className="right-content-image">
-        {/* <img src={require("./images/menu-5.png")} alt="" />x` */}
+        <div className="first-role">
+            <div className="role-tag">
+        <div className="number">
+         1.
+        </div>
+        Tasty slices made by experts
+        
+        </div>
+        </div>
+              
+      <div className="second-role">
+            <div className="role-tag">
+        <div className="number">
+         2.
+        </div>
+        Good price and affordable
+        
+        </div>
+        </div>
+        <div className="third-role">
+         <div className="role-tag">
+        <div className="number">
+         3.
+        </div>
+        Fast and lovely delivery
+        
+        </div>
+        </div>
+
+        
+        <img src={require("./images/chef1.png")} alt="the chef" />
+    <img src={require("./images/delivery2.png")}></img>
         </div>
         </div>
         </div>
