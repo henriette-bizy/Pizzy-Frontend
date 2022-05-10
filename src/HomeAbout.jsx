@@ -1,5 +1,6 @@
 import React from "react";
 import {FaQuestion} from "react-icons/fa"
+import ReactPlayer from "react-player";
 class HomeAbout extends React.Component{
 
 render(){
@@ -16,11 +17,13 @@ render(){
 
         <div className="left-content">
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Magnam consequuntur assumenda officia nisi libero. Corrupti
+           We are Pizzy delivery shop, and as the name suggests it's all
+             about Pizza. assumenda officia nisi libero. Corrupti
               quo fugit, sapiente perspiciatis modi deserunt. Consequatur
                non cumque quam dolorem corrupti ipsa dolore debitis.
-
+            <br></br>
+            <br></br>
+            
 
 
                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -32,38 +35,6 @@ render(){
         <div className="right-content">
         {/* <img src={require("./images/chef.jpg")} alt="" /> */}
         <div className="right-content-image">
-        <div className="first-role">
-            <div className="role-tag">
-        <div className="number">
-         1.
-        </div>
-        Tasty slices made by experts
-        
-        </div>
-        </div>
-              
-      <div className="second-role">
-            <div className="role-tag">
-        <div className="number">
-         2.
-        </div>
-        Good price and affordable
-        
-        </div>
-        </div>
-        <div className="third-role">
-         <div className="role-tag">
-        <div className="number">
-         3.
-        </div>
-        Fast and lovely delivery
-        
-        </div>
-        </div>
-
-        
-        <img src={require("./images/chef1.png")} alt="the chef" />
-    <img src={require("./images/delivery2.png")}></img>
         </div>
         </div>
         </div>

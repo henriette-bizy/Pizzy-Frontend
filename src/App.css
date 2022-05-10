@@ -438,3 +438,13 @@ margin-right: 20px;
     color: white;
 
 }   
+.react-video{
+
+    margin-top:53px;
+    width: 300px;
+    height: 100px;
+}
+
+.react-video .video{
+    width:300px
+}
