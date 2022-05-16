@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import HomeMenu from "./HomeMenu";
 import HomeAbout from "./HomeAbout";
+import HomeSubscribe from "./Home-subscribe";
 
 class Home extends React.Component {
   constructor(props) {
@@ -73,6 +74,7 @@ class Home extends React.Component {
         <img src={require("./images/pizzaP.png")} className="pizzaHome"></img>
         <HomeMenu />
         <HomeAbout />
+        <HomeSubscribe />
       </div>
     );
   }
