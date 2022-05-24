@@ -344,16 +344,12 @@ box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
 }
 .About-content {
-    width: 87%;
+    width: 89%;
     height: 600px;
     margin: auto; 
 }
 
-.About-content .left-about{
-   width: 40%;
-   margin-top: 70px;
-   float: left;
-}
+
  
  .About-content .About-title{
     display: flex;
@@ -371,54 +367,56 @@ background-color: orange;
 border-radius: 10px;
 margin-right: 20px;
 }
+.About-content .left-about{
+    width: 35%;
+    margin-top: 70px;
+    float: left;
+ }
 .About-content .left-about p{
-    padding: 20px;
+    padding-top: 12px;
+    padding-bottom: 32px;
     font-weight: 500;
-
+    color: rgb(128, 123, 123);
+}
+.About-content .left-about .about-button{
+    width: 45%;
+    height: 50px;
+    /* background-color: red; */
 }
 .About-content .left-about .about-button button{
-    width: 200px;
+    width: 100%;
     height: 50px;
     border-radius: 10px;
     background-color: orange;
-    margin-left: 17px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.19) ;
+    
 }
 .About-content .left-about .about-button .about-icon{
+    top: 79%;
     position: relative;
-    left:11%;
+    left:15%;
 }
 .About-content .right-about{
-    margin-top: 100px;
-    width: 50%;
+    margin-top: 50px;
+    width: 60%;
     /* background-color: red; */
     float: right;
 }
-/* .about-image{
-    margin-top: 20px;
-    float: right;
-    width:800px;
-    height:620px;
-    border: 1px solid black;
-}  */
 
-.About-content .right-about img:nth-child(1){
-border-radius: 10px;
-width: 300px;
-height: 370px;
-margin-right: 30px;
+.About-content .right-about img{
+  margin-left: 45px;
+  width: 100%;
+  height: 450px;
 }
-.About-content .right-about img:nth-child(2){
-    width: 290px;
-    height: 260px;
-    border-radius: 10px;
+.About-content .right-about .right-card{
+    width: 20%;
+    height: 100px;
+   background-color: black;
+   position: relative;
+   top: 23%;
+   bottom: 93%;
 }
-.About-content .right-about img:nth-child(3){
-    width: 290px;
-    height: 260px;
-    border-radius: 10px;
-    margin-right: 0px;
-    float: right;
-}
+
 .subscribe{
     width: 100%;
     height: 50vh;
@@ -428,10 +426,71 @@ margin-right: 30px;
     background-repeat: no-repeat;
 }
 
+.subscribe .sub-left{
+    width: 50%;
+    margin-top: 100px;
+    float: left;
+}
+
+.subscribe .sub-left h2{
+    padding: 20px;
+    color: white;
+    text-transform: capitalize;
+}
+.subscribe .sub-left .sub-input {
+    margin-left: 20px;
+    width: 80%;
+}
+.subscribe .sub-left .sub-input input{
+    width: 70%;
+    height: 60px;
+    /* background-color: black; */
+}
+.subscribe .sub-left button{
+    width: 100px;
+    height: 60px; 
+    background-color: orange;
+    color: white;
+}
 .subscribe .sub-right{
-    width: 30%;
-    height: 40vh;
-    margin-top: 20px;
-    background-color: white;
+    width: 23%;
+    height: 38vh;
+    margin-top: 50px;
+    margin-right: 30px;
+    background-color: black;
+    border-radius: 10px;
     float: right;
+    color:white;
+}
+.subscribe .sub-right .sub-right-profile{
+    width: 32%;
+    height: 50px;   
+    margin: auto;
+    margin-top: 10px;
+}
+.subscribe .sub-right .sub-right-profile img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 100px;
+}
+
+.subscribe .sub-right h2{
+    text-align: center;
+    color: white;
+    font-size: 15px;    
+    padding: 22px;
+    margin-top: 33px;
+
+}
+.subscribe .sub-right p{
+    
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;  
+    font-weight: bold;
+}
+
+.sub-right-icon{
+    margin-left:170px ;
 }
