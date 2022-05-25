@@ -1,6 +1,7 @@
 import React from "react";
 import {FaQuestion,FaPlay} from "react-icons/fa"
-import ReactPlayer from "react-player";
+import {ProgressBar,Step } from "react-step-progress-bar"
+
 class HomeAbout extends React.Component{
 
 render(){
@@ -41,13 +42,30 @@ render(){
 
 
         <div className="right-about">
-         <img src={require("./images/combined.png")} className="about-image" />
-         <div className="right-card">
-        
+            
+         
+         <div className="right-about-img">
+         <img src={require("./images/about-4.jpg")} alt="" />
+        </div>
+        <div className="right-about-bg">
+        <img src={require("./images/Group 2.png")} />
+        </div>
+        </div>
+
+          <div className="right-card">
+          <div className="right-card-content">
+          <h2>Delicious & Reliable</h2>
+          {/* <p>Trust</p> */}
+          2020
+          <ProgressBar
+        percent={75}
+        filledBackground="linear-gradient(to right, #fefb72, #f0bb31)"
+        />
+        {/* <label for="file">Customer's Trust</label> */}
+        {/* <progress id="file" value="60" max="100" color="orange"> 32% </progress> */}
+          </div>
          </div>
 
-         
-        </div>
         </div>
          </div>
     )
