@@ -11,6 +11,7 @@ import {
 import HomeMenu from "./HomeMenu";
 import HomeAbout from "./HomeAbout";
 import HomeSubscribe from "./Home-subscribe";
+import HomeContact  from "./HomeContact";
 
 class Home extends React.Component {
   constructor(props) {
@@ -75,6 +76,7 @@ class Home extends React.Component {
         <HomeMenu />
         <HomeAbout />
         <HomeSubscribe />
+        <HomeContact />
       </div>
     );
   }
