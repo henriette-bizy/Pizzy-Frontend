@@ -1,17 +1,11 @@
-import "./App.css";
+import "../assets/Styles/App.css";
+import NavBar from "../components/NavBar"
 import React from "react";
-import {
-  FontAwesome,
-  FaAngleRight,
-  FaArrowRight,
-  FaAward,
-  FaStar,
-  FaAngleLeft,
-} from "react-icons/fa";
 import HomeMenu from "./HomeMenu";
 import HomeAbout from "./HomeAbout";
-import HomeSubscribe from "./Home-subscribe";
+import HomeSubscribe from "./HomeSubscribe";
 import HomeContact  from "./HomeContact";
+import {FaArrowRight} from "react-icons/fa"
 
 class Home extends React.Component {
   constructor(props) {
@@ -26,32 +20,7 @@ class Home extends React.Component {
     return (
       <div className="Home">
         <div className="container">
-          <div className="navbar">
-            <div className="logo">
-              <h1>Pizzy. </h1>
-            </div>
-
-            <div className="links">
-              <ul>
-                <li>
-                  <a href="#"> Home </a>
-                </li>
-                <li>
-                  <a href="#"> Menu </a>
-                </li>
-                <li>
-                  <a href="#"> About </a>
-                </li>
-                <li>
-                  <a href="#"> Contact</a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="nav-buttons">
-              <button> Sign in </button>
-            </div>
-          </div>
+          <NavBar/>
         </div>
         <div className="wavy">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -72,10 +41,10 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
-        <img src={require("./images/pizzaP.png")} className="pizzaHome"></img>
+        <img src={require("../assets/images/pizzaP.png")} className="pizzaHome"></img>
         <HomeMenu />
         <HomeAbout />
-        <HomeSubscribe />
+        {/* <HomeSubscribe /> */}
         <HomeContact />
       </div>
     );

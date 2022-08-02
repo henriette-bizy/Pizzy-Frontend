@@ -45,14 +45,14 @@ render(){
             
          
          <div className="right-about-img">
-         <img src={require("./images/about-4.jpg")} alt="" />
+         <img src={require("../assets/images/about-4.jpg")} alt="" />
         </div>
         <div className="right-about-bg">
-        <img src={require("./images/Group 2.png")} />
+        <img src={require("../assets/images/Group 2.png")} />
         </div>
         </div>
 
-          <div className="right-card">
+            <div className="right-card">
           <div className="right-card-content">
           <h2>Delicious & Reliable</h2>
           {/* <p>Trust</p> */}
@@ -71,4 +71,4 @@ render(){
     )
 }
 }
-export default HomeAbout;
+export default HomeAbout; 

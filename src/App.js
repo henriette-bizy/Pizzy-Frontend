@@ -1,8 +1,8 @@
-import './App.css';
+import './assets/Styles/App.css';
 import React from 'react';
-import Home from './Home'
+import Home from './pages/Home';
 // import Menu from './Menu'
-import Form from './form'
+import Form from './pages/Form'
 
 
 

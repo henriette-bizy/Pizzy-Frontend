@@ -14,18 +14,18 @@ render(){
     <div className="Menu_body">
       <div className="card">
       <div className="bg-orange"></div>
-        <img src={require("./images/menu-1.png")}></img>
+        <img src={require("../assets/images/menu-1.png")}></img>
         <div className="price">$10</div>
         <div className="pizzy-name"> Pepperoni Pizza</div>
         
       </div>
       <div className="card">
-        <img src={require("./images/menu-2.png")}></img>
+        <img src={require("../assets/images/menu-2.png")}></img>
         <div className="price">$30</div>
         <div className="pizzy-name"> Sausage Pizza</div>
       </div>
       <div className="card">
-        <img src={require("./images/menu-3.png")}></img>
+        <img src={require("../assets/images/menu-3.png")}></img>
         <div className="price">$20</div>
         <div className="pizzy-name"> Italian Pizza</div>
         <div className="new-menu">
@@ -35,7 +35,7 @@ render(){
         
       </div>
       <div className="card">
-        <img src={require("./images/menu-4.png")}></img>
+        <img src={require("../assets/images/menu-4.png")}></img>
         <div className="price">$15</div>
         <div className="pizzy-name"> British Pizza</div>
       </div>
