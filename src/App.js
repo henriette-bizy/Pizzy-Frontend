@@ -1,14 +1,18 @@
 import './assets/Styles/App.css';
 import React from 'react';
-import Home from './pages/Home';
-// import Menu from './Menu'
-import Form from './pages/Form'
+import Menu from './pages/HomeMenu'
+import About from "./pages/HomeAbout";
+import SignUp  from './pages/Registration/SignUp';
+import Contact  from "./pages/HomeContact";
+import Home from './pages/Home'
+
+import Form from './components/Form'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
+function App (){
 
-class App extends React.Component{
-
-  render(){
+  
  const pizzaTypes = [
 {
 pizzyImage: './images/sausagePizza.jpg',
@@ -38,20 +42,31 @@ pizzyPrice:'12 000 RWF'
 }
 
  ]
+
+
+
   return (
     <div className="App">
       {/* <Form /> */}
   <Home />
-  
-   {/* {pizzaTypes.map((pizzaItem)=>{
-     return ( 
-      <Menu pizzyImage= {pizzaItem.pizzyImage} pizzyType={pizzaItem.pizzyType}  pizzyPrice={pizzaItem.pizzyPrice}/>  
-    )
-   } 
-   )}       */}
+<BrowserRouter >
+  <Routes>
+    {/* <Route path='/' element={<App />}></Route> */}
+    <Route path='/' element={<Home />}></Route>
+    <Route path='/menu' element={<Menu />}></Route>
+    <Route path='/about' element = {<About />}></Route>
+    <Route path='/contact' element = {<Contact />}></Route>
+    <Route path='/signUp' element = {<SignUp />}></Route>
+
+    <Route path = '*' element = {<h2>404</h2>}></Route>
+    
+  </Routes>
+  </BrowserRouter>
+
+
+
     </div>
   );
-}
-}
+  }
 
 export default App;

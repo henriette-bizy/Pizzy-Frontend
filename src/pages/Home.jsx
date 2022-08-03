@@ -3,25 +3,20 @@ import NavBar from "../components/NavBar"
 import React from "react";
 import HomeMenu from "./HomeMenu";
 import HomeAbout from "./HomeAbout";
-import HomeSubscribe from "./HomeSubscribe";
-import HomeContact  from "./HomeContact";
+import  HomeSubscribe from './HomeSubscribe'
+import HomeContact from "./HomeContact";
+
 import {FaArrowRight} from "react-icons/fa"
 
-class Home extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { foodName: ".........." };
-  }
-  EventChanger(foodName) {
-    this.setState({ foodName: foodName });
-  }
-
-  render() {
+function Home (){
+    
     return (
-      <div className="Home">
+      <div className="home">
+        
         <div className="container">
-          <NavBar/>
+                    <NavBar/>
         </div>
+
         <div className="wavy">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
@@ -44,11 +39,11 @@ class Home extends React.Component {
         <img src={require("../assets/images/pizzaP.png")} className="pizzaHome"></img>
         <HomeMenu />
         <HomeAbout />
-        {/* <HomeSubscribe /> */}
+        <HomeSubscribe /> 
         <HomeContact />
       </div>
     );
   }
-}
+
 
 export default Home;
