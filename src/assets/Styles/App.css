@@ -20,6 +20,7 @@
  .navbar {
     width: 95%;
     margin: auto;
+    position: fixed;
 }
 
 .logo {
@@ -246,6 +247,14 @@ padding-top: 25px;
     margin-bottom: 0px;
     padding: 0;
 }
+.Menu_content{
+    margin-top: 500px;
+}
+
+
+
+
+
 .Menu_title {
     width:25%;
     margin: auto;

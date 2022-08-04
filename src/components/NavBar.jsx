@@ -1,40 +1,35 @@
 import react from "react";
 import "../assets/Styles/App.css";
 import Button from "./Button";
-import Home from "../pages/Home";
-import Menu from "../pages/HomeMenu";
-import About from "../pages/HomeAbout";
-import Contact from "../pages/HomeContact";
-import Form from "../components/Form";
+import { Link } from "react-scroll";
 
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams,
-} from "react-router-dom";
 
 function NavBar() {
+
+
+
+
+
+
   const menuItems = [
     {
       value: "Home",
-      link: "/home",
+      link: "home",
     },
     {
       value: "Menu",
-      link: "/menu",
+      link: "Menu_content",
     },
     {
       value: "About",
-      link: "/about",
+      link: "About",
     },
     {
       value: "Contact",
-      link: "/contact",
+      link: "Contact",
     },
   ];
+    //random shit
   return (
 
     <div className="navbar">
@@ -45,16 +40,17 @@ function NavBar() {
       <div className="flex items-center justify-between flex-wrap  p-7">
         <ul className="flex text-amber">
           <li className="mr-3">
+            <a>
             {menuItems.map((item) => (
-              <Link to={item.link}>{item.value} </Link>
-            ))}
+              <Link to={item.link} spy={true} smooth={true} duration={500} >{item.value} </Link> ))}
+              </a>
           </li>
         </ul>
       </div>
 
       <div className="btn ">
         <Button className="bg-sky-600 hover:bg-sky-700 px-5 py-3 text-white rounded-lg">
-          <Link to="/SignUp"> Sign in </Link>
+          <a href="/SignUp"> Sign in </a>
         </Button>
       </div>
     </div>

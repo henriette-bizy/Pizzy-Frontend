@@ -6,7 +6,7 @@ class HomeAbout extends React.Component{
 
 render(){
     return(
-        <div className="About">
+        <div className="About" id="About">
         <div className="About-content">
         <div className="left-about">
         <div className="About-title">

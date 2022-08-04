@@ -5,8 +5,7 @@ import About from "./pages/HomeAbout";
 import SignUp  from './pages/Registration/SignUp';
 import Contact  from "./pages/HomeContact";
 import Home from './pages/Home'
-
-import Form from './components/Form'
+import NotFound from './pages/NotFround/NotFound';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
@@ -47,18 +46,16 @@ pizzyPrice:'12 000 RWF'
 
   return (
     <div className="App">
-      {/* <Form /> */}
-  <Home />
+   {/* <Home /> */}
+
 <BrowserRouter >
+
+
   <Routes>
     {/* <Route path='/' element={<App />}></Route> */}
     <Route path='/' element={<Home />}></Route>
-    <Route path='/menu' element={<Menu />}></Route>
-    <Route path='/about' element = {<About />}></Route>
-    <Route path='/contact' element = {<Contact />}></Route>
     <Route path='/signUp' element = {<SignUp />}></Route>
-
-    <Route path = '*' element = {<h2>404</h2>}></Route>
+    <Route path = '*' element = {<NotFound />}></Route>
     
   </Routes>
   </BrowserRouter>

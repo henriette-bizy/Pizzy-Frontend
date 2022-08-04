@@ -18,7 +18,7 @@ render(){
 
             <div className="sub-right">
             <div className="sub-right-profile">
-                <img src={require('../assets/images/Ellipse 3.png')}  alt="ellipse image"/>
+                <img src={require('../assets/images/Ellipse 3.png')}  alt=""/>
             </div>
             <h2>Martinez Gonzella</h2>
             <p>" The head director of the coachella amazing pizza restaurant"</p>
