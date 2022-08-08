@@ -1,9 +1,7 @@
 import './assets/Styles/App.css';
 import React from 'react';
-import Menu from './pages/HomeMenu'
-import About from "./pages/HomeAbout";
 import SignUp  from './pages/Registration/SignUp';
-import Contact  from "./pages/HomeContact";
+import Dashboard from './pages/Dashboard/admin/Dashboard'
 import Home from './pages/Home'
 import NotFound from './pages/NotFround/NotFound';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -55,6 +53,7 @@ pizzyPrice:'12 000 RWF'
     {/* <Route path='/' element={<App />}></Route> */}
     <Route path='/' element={<Home />}></Route>
     <Route path='/signUp' element = {<SignUp />}></Route>
+    <Route  path='/admin/dashboard' element = {<Dashboard />}></Route>
     <Route path = '*' element = {<NotFound />}></Route>
     
   </Routes>

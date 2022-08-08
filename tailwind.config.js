@@ -12,11 +12,25 @@ module.exports = {
       'midnight': '#121063',
       'metal': '#565584',
       'tahiti': '#3ab7bf',
-      'amber': '#facc15',
+      'orange': '#f97316',
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
+      'lightblue':'#2563eb'
     },
-    extend: {},
+
+    fontSize:{
+    'norm':'15px'
+    },
+    extend: {
+      width: {
+        'norm': '90%',
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    {
+    tableLayout: false,
+  }
+    
+  ],
 }
