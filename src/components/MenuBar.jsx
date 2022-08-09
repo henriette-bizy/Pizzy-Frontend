@@ -1,7 +1,7 @@
 function MenuBar(){
 
 return(
-<aside className="w-5/6 float-right ">
+<aside className="w-5/6  float-right ">
 <div className=" flex bg-white shadow-md h-16  ">
  
 <div className="pt-6">
@@ -13,6 +13,12 @@ return(
 <span className="text-sm ml-2 text-orange">  /</span>
 </a>
 </div>
+
+
+<div className=" ml-[1090px] w-12 h-12 mt-2">
+      <img src={require('../assets/images/profile.png')} alt="user-profile"></img>
+
+      </div>
 
 </div>
 </aside>

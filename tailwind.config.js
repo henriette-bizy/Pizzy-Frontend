@@ -8,14 +8,15 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       'white': '#ffffff',
-      'purple': '#3f3cbb',
-      'midnight': '#121063',
+      'green': '#16a34a',
+      'gray': '#6b7280',
       'metal': '#565584',
-      'tahiti': '#3ab7bf',
+      'red': '#dc2626',
+      'lightorange':'#fed7aa',
       'orange': '#f97316',
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
-      'lightblue':'#2563eb'
+      'lightblue':'#2563eb',
     },
 
     fontSize:{
@@ -24,6 +25,9 @@ module.exports = {
     extend: {
       width: {
         'norm': '90%',
+      },
+      margin:{
+       '100':'400px'
       }
     },
   },

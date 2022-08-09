@@ -53,6 +53,7 @@ function NavBar() {
           <a href="/SignUp"> Sign in </a>
         </Button>
       </div>
+
     </div>
 
     //corespoding links

@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard/admin/Dashboard'
 import Home from './pages/Home'
 import NotFound from './pages/NotFround/NotFound';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Menu from './Menu';
 
 
 function App (){
@@ -47,20 +48,8 @@ pizzyPrice:'12 000 RWF'
    {/* <Home /> */}
 
 <BrowserRouter >
-
-
-  <Routes>
-    {/* <Route path='/' element={<App />}></Route> */}
-    <Route path='/' element={<Home />}></Route>
-    <Route path='/signUp' element = {<SignUp />}></Route>
-    <Route  path='/admin/dashboard' element = {<Dashboard />}></Route>
-    <Route path = '*' element = {<NotFound />}></Route>
-    
-  </Routes>
-  </BrowserRouter>
-
-
-
+<Dashboard />
+   </BrowserRouter>
     </div>
   );
   }
