@@ -1,12 +1,28 @@
+import {useState,useEffect} from 'react';
+import {GetOrders} from '../../../services/GetOrders'
 function Orders(){
 
-return (
+const [values, setValues] = useState([]);
 
-    
+//fetching
+useEffect(()=>{
+  let mounted = true;
+  GetOrders().
+  then(items => {
+    if(mounted) {
+      setValues(items)
+    }
+  })
+  return () =>mounted = false;
+},[])
+return (    
     <div>
-    <p className="text-center capitalize py-96  text-lightblue">Yayyy contet on the way for  orders 
-        we'll be right back
-    </p>
+   <h1>The orders</h1>
+   <ul>
+    {values.map((item=> <li>{item.item}</li>))}
+    {console.log("down here we have no problem")};
+
+   </ul>
   </div>
 
 )

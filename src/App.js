@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import NotFound from './pages/NotFround/NotFound';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Menu from './Menu';
+import StoreToken from './storeToken';
 
 
 function App (){
@@ -48,7 +49,7 @@ pizzyPrice:'12 000 RWF'
    {/* <Home /> */}
 
 <BrowserRouter >
-<Dashboard />
+<StoreToken />
    </BrowserRouter>
     </div>
   );
