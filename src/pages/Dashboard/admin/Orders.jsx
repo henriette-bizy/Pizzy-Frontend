@@ -1,5 +1,5 @@
 import {useState,useEffect} from 'react';
-import {GetOrders} from '../../../services/GetOrders'
+import {GetOrders} from '../../../services/service'
 function Orders(){
 
 const [values, setValues] = useState([]);
@@ -7,8 +7,9 @@ const [values, setValues] = useState([]);
 //fetching
 useEffect(()=>{
   let mounted = true;
-  GetOrders().
-  then(items => {
+  GetOrders()
+  
+  .then(items => {
     if(mounted) {
       setValues(items)
     }

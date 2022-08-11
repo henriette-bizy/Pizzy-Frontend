@@ -1,41 +1,31 @@
 import { useEffect } from "react";
+import { Button } from "react-scroll";
+import {_logIn} from './services/service'
 
 function StoreToken(){
 
-  const statuse='';
+  const data = {
+    "username":"test",
+	"password":"test"
+  }
+  let statuse='';
 
-    useEffect(()=>{
-        fetch('https://order-pizza-api.herokuapp.com/api/auth'),
-        {
-         method:"POST",
-         headers:{
-            'Content-Type':'application/json',
-            'Access-Control-Allow-Origin': '*'
-         }
-        }   
-        ,
-        {
-            body:{
-                username:"test",
-                password:"test"
-            }
-        }
-        .then((response)                                                         =>{
-            const {token} = response.data;
-            localStorage.setItem('token',token);
-            localStorage.getItem('token')
-            console.log(token);
-            statuse ="true";
-        })
-        .catch(err=>{
-                console.log(err)
-                statuse = "false";
-            })
-        })
+    // useEffect(()=>{
+    //     const l =  _logIn("https://order-pizza-api.herokuapp.com/api/auth",data);
+     
+    // //    .then(
+    // //     statuse = "true"
+    // //    )
+    // //    .catch(
+    // //     statuse="byanze mhn"
+    // //    )
+    //    console.log(l);
+    //     })
     
     
     return(
         <div>
+<button type="button" onClick={()=>{_logIn("https://order-pizza-api.herokuapp.com/api/auth",data)}}> Sign in</button>
      <p>{statuse}</p>
         </div>
     )

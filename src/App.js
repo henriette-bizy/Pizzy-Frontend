@@ -49,7 +49,7 @@ pizzyPrice:'12 000 RWF'
    {/* <Home /> */}
 
 <BrowserRouter >
-<StoreToken />
+<StoreToken/>
    </BrowserRouter>
     </div>
   );
