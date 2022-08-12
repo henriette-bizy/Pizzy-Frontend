@@ -1,17 +1,15 @@
 import './assets/Styles/App.css';
-import React from 'react';
-import SignUp  from './pages/Registration/SignUp';
-import Dashboard from './pages/Dashboard/admin/Dashboard'
-import Home from './pages/Home'
-import NotFound from './pages/NotFround/NotFound';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Menu from './Menu';
-import StoreToken from './storeToken';
+import React, { useState } from 'react';
+import { BrowserRouter} from 'react-router-dom';
+import Routes from './routes'
+import useToken from './useToken';
+import { SignIn } from './services/service';
+import {Redirect }from 'react-router'
 
 
 function App (){
 
-  
+//  const [token,setToken] =  useToken();  
  const pizzaTypes = [
 {
 pizzyImage: './images/sausagePizza.jpg',
@@ -41,15 +39,16 @@ pizzyPrice:'12 000 RWF'
 }
 
  ]
-
-
+// if(!token){
+//    <SignIn setToken={setToken} />
+// }
 
   return (
     <div className="App">
    {/* <Home /> */}
 
 <BrowserRouter >
-<StoreToken/>
+<Routes />
    </BrowserRouter>
     </div>
   );

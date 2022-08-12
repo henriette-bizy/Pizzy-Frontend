@@ -1,7 +1,6 @@
 import react from "react";
 import "../assets/Styles/App.css";
-import Button from "./Button";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 
 function NavBar() {
@@ -37,7 +36,7 @@ function NavBar() {
         <h1 className="font-bold">Pizzy. </h1>
       </div>
 
-      <div className="flex items-center justify-between flex-wrap  p-7">
+      <div className="flex items-center justify-between flex-wrap  p-7 float-left">
         <ul className="flex text-amber">
           <li className="mr-3">
             <a>
@@ -48,10 +47,14 @@ function NavBar() {
         </ul>
       </div>
 
-      <div className="btn ">
-        <Button className="bg-sky-600 hover:bg-sky-700 px-5 py-3 text-white rounded-lg">
-          <a href="/SignUp"> Sign in </a>
-        </Button>
+      <div className="btn  float-right">
+        <button className="bg-orange  px-5 py-3  rounded-lg  mt-7">
+          <a href="/signUp"> Sign in </a>
+        </button>
+      </div>
+
+      <div>
+        
       </div>
 
     </div>

@@ -1,4 +1,5 @@
 import {useState}  from "react";
+import { Link } from "react-router-dom";
 
 
 function Form(){
@@ -50,7 +51,7 @@ const handleSubmit = (event) =>{
     event.preventDefault();
 
     if(values.names && values.email && values.password && values.cpassword){
-        setValid(true);
+        
     }
     setSubmitted(true);
 }
@@ -116,7 +117,7 @@ return(
     </form>
 <div className="form-buttons ">
 <button onClick={()=> {this.gotoSignUp()}}> Sign Up </button>
-<button onClick={()=>{this.gotoSignIn()}}> Sign In </button>
+<button> <Link to="/SignIn">Sign In</Link> </button>
 </div>
 </div>
 
