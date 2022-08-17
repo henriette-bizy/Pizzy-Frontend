@@ -1,10 +1,12 @@
 import './assets/Styles/App.css';
 import React, { useState } from 'react';
 import { BrowserRouter} from 'react-router-dom';
+import {Navigate} from 'react-router-dom'
 import Routes from './routes'
-import useToken from './useToken';
+import {getToken} from './useToken'
 import { SignIn } from './services/service';
-import {Redirect }from 'react-router'
+import useToken from './useToken';
+
 
 
 function App (){
@@ -39,9 +41,7 @@ pizzyPrice:'12 000 RWF'
 }
 
  ]
-// if(!token){
-//    <SignIn setToken={setToken} />
-// }
+ 
 
   return (
     <div className="App">

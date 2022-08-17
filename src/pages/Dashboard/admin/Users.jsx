@@ -1,9 +1,21 @@
 import { defaultListboxReducer } from '@mui/base'
+import React,{ useEffect } from 'react';
+import {Navigate, useNavigate} from 'react-router-dom'
+import {getToken} from '../../../useToken';
 import Table from '../../../components/Table'
 function Users (){
 
-
-
+const navigate = useNavigate();
+useEffect(()=>{
+    const token = getToken();
+    if(token === null){
+        // return <Navigate to="/signIn" /> 
+        navigate('/signIn');
+        
+       }
+    console.log(token);
+       
+},[])
     return(
         <div>
         <button className='absolute  top-[166px] left-[1060px] h-12 w-48 bg-orange hover:bg-lightblue  py-2 px-4 rounded inline-flex items-center  border-non'>

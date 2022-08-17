@@ -1,13 +1,9 @@
-import React from 'react';
-
-
+import React from "react";
+import { useState } from "react";
 
 // class ButtonComponent extends React.Component{
 
-
 // render(){
-   
-
 
 //     const bwidth = props.width;
 //     // const height = props.height;
@@ -22,17 +18,50 @@ import React from 'react';
 //     let btnStyle = '$bwidth'
 //     return (
 //         <button>
-            
+
 //         </button>
 //     )
-    
 
-    const Button= ({styleclass,value}   )=> (
-        <button className={` btn ${styleclass}`}>{value}</button>
-    )
-   
-   
-       
-//    }
-    
+const Button = ({ buttonType, size ,value}) => {
+  let sizeStyle ="";
+  
+  if (buttonType == "submitButton") {
+    switch (size) {
+      case "small":
+        sizeStyle ="shadow h-12 w-32 bg-orange  text-white "
+        break;
+      case "medium":
+        sizeStyle ="shadow h-12 w-64 bg-orange  text-white  "
+        break;
+      case "big":
+        sizeStyle =" shadow h-12 w-68 bg-orange  text-white "
+        break
+      default:
+        sizeStyle ="shadow h-12 w-64 bg-orange  text-whit"
+    }
+   }
+    else if (buttonType == "iconButton"){
+      switch(size){
+        case "small":
+            sizeStyle ="  "
+            break;
+        case "medium":
+            sizeStyle =" "
+
+        case "big":
+            sizeStyle ="  "
+      }
+
+
+    }
+
+    // setValue(value)
+
+    return (
+      
+      <button className={sizeStyle}> {value}</button>
+    );
+  }
+
+
 export default Button;
