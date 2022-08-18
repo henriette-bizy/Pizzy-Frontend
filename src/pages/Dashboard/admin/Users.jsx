@@ -8,7 +8,7 @@ function Users (){
 const navigate = useNavigate();
 useEffect(()=>{
     const token = getToken();
-    if(token === null){
+    if(getToken() === null){
         // return <Navigate to="/signIn" /> 
         navigate('/signIn');
         

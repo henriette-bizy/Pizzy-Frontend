@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import {Link} from "react-router-dom"
 
 // class ButtonComponent extends React.Component{
 
@@ -22,34 +23,34 @@ import { useState } from "react";
 //         </button>
 //     )
 
-const Button = ({ buttonType, size ,value}) => {
+const Button = ({ buttonType, size ,value,...rest}) => {
   let sizeStyle ="";
   
   if (buttonType == "submitButton") {
     switch (size) {
       case "small":
-        sizeStyle ="shadow h-12 w-32 bg-orange  text-white "
+        sizeStyle ="shadow h-12 w-28 bg-orange  text-white "
         break;
       case "medium":
-        sizeStyle ="shadow h-12 w-64 bg-orange  text-white  "
+        sizeStyle ={...rest}+"shadow h-12 bg-orange w-[60%] text-white  " 
         break;
       case "big":
-        sizeStyle =" shadow h-12 w-68 bg-orange  text-white "
+        sizeStyle = {...rest}+" shadow h-12  bg-orange  text-white"
         break
       default:
-        sizeStyle ="shadow h-12 w-64 bg-orange  text-whit"
+        sizeStyle ="shadow h-12 w-64 bg-orange  text-white"
     }
    }
     else if (buttonType == "iconButton"){
       switch(size){
         case "small":
-            sizeStyle ="  "
+            sizeStyle =" "
             break;
         case "medium":
             sizeStyle =" "
 
         case "big":
-            sizeStyle ="  "
+            sizeStyle =" "
       }
 
 
@@ -59,7 +60,7 @@ const Button = ({ buttonType, size ,value}) => {
 
     return (
       
-      <button className={sizeStyle}> {value}</button>
+      <button className={sizeStyle}> {value} </button>
     );
   }
 

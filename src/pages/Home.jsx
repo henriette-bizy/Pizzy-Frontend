@@ -11,7 +11,7 @@ import {FaArrowRight} from "react-icons/fa"
 function Home (){
     
     return (
-      <div className="home">
+      <div className="home" id="Home">
         
         <div className="container">
                     <NavBar/>

@@ -5,7 +5,7 @@ class HomeContact extends  React.Component{
 
 render(){
     return(
-        <div className="Contact">
+        <div className="Contact" id="Contact">
             <div className="Contact-left">
             {/* <img src={require('./images/contact1.jpg')}   alt="contact us picture"/> */}
             </div>

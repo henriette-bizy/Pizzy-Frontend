@@ -6,7 +6,7 @@ import {_logIn} from './services/service'
 
 export const getToken = () =>{
 
-  console.log("we in the function");
+  
   const tokenString = localStorage.getItem('token') || {}
   console.log(tokenString);
   // const userToken = JSON.parse(tokenString)

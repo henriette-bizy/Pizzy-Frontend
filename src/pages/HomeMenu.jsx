@@ -3,7 +3,7 @@ import {FaAngleRight,FaArrowRight,FaAward,FaStar,FaAngleLeft} from "react-icons/
   
 class HomeMenu extends React.Component{
 render(){
-    return(  <div className="Menu_content">
+    return(  <div className="Menu_content" id="Menu">
     <div className="Menu_title">
       <div className="award">
         <FaAward size="30px" />

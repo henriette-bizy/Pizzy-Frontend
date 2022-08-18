@@ -1,18 +1,16 @@
 import { Component } from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate,Outlet } from "react-router-dom";
 import { getToken } from "../useToken";
 
 
-function ProtectedRouted({component:Component,...restProps}){
+const ProtectedRoute = ({component:Component,...restProps})=>{
 
 const isAuthenticated = getToken()
 
 return (
-
-    <Route
-     {...restProps}
-     render={(props)=> isAuthenticated ? <component {...props} />:<Navigate to ="/signIn" />} />
+    // <Route  {...restProps}   element={(props)=> (isAuthenticated)!== null ? <component {...props} />:<Navigate to ="/signIn" />} />
+    isAuthenticated!== null ? <Outlet/> :<Navigate to ="/signIn" />
 )
 }
-export default ProtectedRouted;
+export default ProtectedRoute;
 

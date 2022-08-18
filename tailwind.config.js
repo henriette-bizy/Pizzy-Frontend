@@ -25,6 +25,7 @@ module.exports = {
     extend: {
       width: {
         'norm': '90%',
+        'mid':'60%'
       },
       margin:{
        '100':'400px'

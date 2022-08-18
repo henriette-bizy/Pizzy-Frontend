@@ -1,23 +1,21 @@
 import react from "react";
 import "../assets/Styles/App.css";
 import { Link } from "react-router-dom";
+import { Button } from "react-scroll";
 
 
 function NavBar() {
 
 
 
-
-
-
   const menuItems = [
     {
       value: "Home",
-      link: "home",
+      link: "Home",
     },
     {
       value: "Menu",
-      link: "Menu_content",
+      link: "Menu",
     },
     {
       value: "About",
@@ -28,29 +26,38 @@ function NavBar() {
       link: "Contact",
     },
   ];
-    //random shit
+
+
+
+
   return (
 
-    <div className="navbar">
-      <div className="logo">
+    <div className="navbar flex">
+      <div className="logo  float-left clear-left  mr-4"> 
         <h1 className="font-bold">Pizzy. </h1>
       </div>
 
-      <div className="flex items-center justify-between flex-wrap  p-7 float-left">
-        <ul className="flex text-amber">
-          <li className="mr-3">
-            <a>
+      <div className=" w-[50%] h-12  mt-7 float-left mr-10">
+        <ul className="flex">
             {menuItems.map((item) => (
-              <Link to={item.link} spy={true} smooth={true} duration={500} >{item.value} </Link> ))}
+              <li className=" w-[22%] mr-10 ">
+              <a className=" text-xs text-orange font-bold   block ">
+              <Link to={item.link} spy={true} smooth={true} duration={500} >{item.value} </Link> 
               </a>
-          </li>
+            </li>
+              ))}
+          
         </ul>
       </div>
 
-      <div className="btn  float-right">
+      <div className="ml-52 float-right">
+        {/* <button className="bg-orange  px-5 py-3  rounded-lg  mt-3">
+          <a href="/signUp"> Sign in </a>
+        </button> */}
         <button className="bg-orange  px-5 py-3  rounded-lg  mt-7">
           <a href="/signUp"> Sign in </a>
         </button>
+        
       </div>
 
       <div>

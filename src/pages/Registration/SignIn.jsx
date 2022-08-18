@@ -1,7 +1,7 @@
 import {} from '../../assets/Styles/App.css'
 import React ,{useState} from 'react'
 import { _logIn } from '../../services/service'
-import Input from '../../components/input';
+import Input from '../../components/Input';
 import {saveToken} from '../../useToken'
 import { Navigate } from 'react-router-dom'
 import Button from '../../components/Button'
@@ -41,26 +41,33 @@ const handleSubmit = async(event) =>{
     setLoggedIn(true);
    
   }
+ ;
+
+
+ //function for handling out errors of the inputs
+  // function outputError(labelInput,errorMsg,value){
+
+  //    let result = '';
+  //    console.log(labelInput);
+  //   if(submitted && value)
+  //          console.log(value);
+  //    result = <p className="text-orange text-xs">{errorMsg}</p>
+
+
+  //   return result;
+  // }
+  
 
   
   return(
    <div>
-    <form className='w-96  flex flex-col  mx-auto my-24' onSubmit={handleSubmit}>
+    <form className='w-[45%]  mx-auto my-24' onSubmit={handleSubmit}>
     {submitted && loggedIn && <Navigate to='/admin/dashboard/home'/>}
       
-     
-
-     <Input label="Names" className="bg-orange" optional="" errorMsg="Please enter your full names"  />
-
-      <div className="w-full">
- <label className='w-full block'>Password</label>
- <input type="password" placeholder="Input ur password" className=" shadow h-12 w-64" value={values.password} onChange={handlePassword}/>
-{submitted && !values.password && <span className="text-red-500 text-xs italic">Please enter your password</span>}
-      </div>
-      
-      <div className='w-full'>
-{/* <button type='submit' className='shadow h-12 w-64 bg-lightblue text-white'> submit</button> */}
-<Button value="Send" buttonType="submitButton" size="medium"/>
+     <div className='mx-auto w-[90%]' >
+     <Input  label="Email"  className="shadow h-12 w-[60%] mx-auto mb-2 " errorMsg="Please input your username "optional={false} value={values.userName}  type="text" onChange={handleUserName}/> 
+     <Input  label="Password"  className="shadow h-12 w-[60%] mx-auto mb-2" errorMsg="Please input your  password "optional={false} value={values.password}  type="password" onChange={handlePassword}/> 
+     <Button value="Send" buttonType="submitButton" size="medium" className="w-[60%]"/> 
       </div>
         </form>
    </div>

@@ -17,7 +17,6 @@ return(
 
 <div className=" ml-[1090px] w-12 h-12 mt-2">
       <img src={require('../assets/images/profile.png')} alt="user-profile"></img>
-
       </div>
 
 </div>
