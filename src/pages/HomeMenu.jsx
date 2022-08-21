@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import {FaAngleRight,FaArrowRight,FaAward,FaStar,FaAngleLeft} from "react-icons/fa";
   
 class HomeMenu extends React.Component{

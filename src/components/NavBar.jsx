@@ -1,13 +1,14 @@
-import react from "react";
+import react,{useState} from "react";
 import "../assets/Styles/App.css";
 import { Link } from "react-router-dom";
-import { Button } from "react-scroll";
+import  Button  from "./Button";
 
 
 function NavBar() {
 
+  const [navbar, setNavbar] = useState(false)
 
-
+  
   const menuItems = [
     {
       value: "Home",
@@ -28,16 +29,27 @@ function NavBar() {
   ];
 
 
+const changeBackground = () =>{
+if(window.scrollY >=95){
+  console.log("we cam at yoouu mhn")
+  setNavbar(true)
+}
+else{
+  setNavbar(false)  
+}
+}
 
+window.addEventListener('scroll', changeBackground);
 
   return (
 
-    <div className="navbar flex">
-      <div className="logo  float-left clear-left  mr-4"> 
+    // <div className="navbar fixed w-[100%] h-20  bg-white shadow-md ">
+     <div className={navbar ? " navbar fixed w-[100%] h-20  bg-white shadow-md z-10" : "navbar fixed w-[100%]"} >
+      <div className="logo  float-left   mr-4"> 
         <h1 className="font-bold">Pizzy. </h1>
       </div>
 
-      <div className=" w-[50%] h-12  mt-7 float-left mr-10">
+      <div className=" w-[50%] h-12  mt-7 float-left pr-10">
         <ul className="flex">
             {menuItems.map((item) => (
               <li className=" w-[22%] mr-10 ">
@@ -50,23 +62,15 @@ function NavBar() {
         </ul>
       </div>
 
-      <div className="ml-52 float-right">
-        {/* <button className="bg-orange  px-5 py-3  rounded-lg  mt-3">
-          <a href="/signUp"> Sign in </a>
-        </button> */}
-        <button className="bg-orange  px-5 py-3  rounded-lg  mt-7">
-          <a href="/signUp"> Sign in </a>
-        </button>
+      <div className="float-right">
         
-      </div>
 
-      <div>
+        {/* //buttonType, size ,value,...rest */}
+       <Button buttontype="submitButton" value = "SignIn" size="small" className="mt-7"/> 
         
       </div>
 
     </div>
-
-    //corespoding links
   );
 }
 

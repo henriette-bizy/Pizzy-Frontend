@@ -3,9 +3,7 @@ import {_logIn} from './services/service'
 
 
 
-
 export const getToken = () =>{
-
   
   const tokenString = localStorage.getItem('token') || {}
   console.log(tokenString);

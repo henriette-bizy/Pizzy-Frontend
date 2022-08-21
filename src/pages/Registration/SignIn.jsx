@@ -67,7 +67,7 @@ const handleSubmit = async(event) =>{
      <div className='mx-auto w-[90%]' >
      <Input  label="Email"  className="shadow h-12 w-[60%] mx-auto mb-2 " errorMsg="Please input your username "optional={false} value={values.userName}  type="text" onChange={handleUserName}/> 
      <Input  label="Password"  className="shadow h-12 w-[60%] mx-auto mb-2" errorMsg="Please input your  password "optional={false} value={values.password}  type="password" onChange={handlePassword}/> 
-     <Button value="Send" buttonType="submitButton" size="medium" className="w-[60%]"/> 
+     <Button value="Send" buttontype="submitButton" size="medium" className="w-[60%]"/> 
       </div>
         </form>
    </div>

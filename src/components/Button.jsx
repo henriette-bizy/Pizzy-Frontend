@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import {Link} from "react-router-dom"
+import {Link, Outlet} from "react-router-dom"
+
 
 // class ButtonComponent extends React.Component{
 
@@ -23,13 +24,16 @@ import {Link} from "react-router-dom"
 //         </button>
 //     )
 
-const Button = ({ buttonType, size ,value,...rest}) => {
-  let sizeStyle ="";
-  
-  if (buttonType == "submitButton") {
+const Button = ({ buttontype, size ,value,...rest}) => {
+  let sizeStyle=""
+  // let restStyles = Object.keys(...rest);
+  // console.log(restStyles);
+  if (buttontype == "submitButton") {
     switch (size) {
+      
       case "small":
-        sizeStyle ="shadow h-12 w-28 bg-orange  text-white "
+        
+        sizeStyle =" mt-5 mr-2 shadow h-10 w-32 bg-orange  text-white align-center rounded "
         break;
       case "medium":
         sizeStyle ={...rest}+"shadow h-12 bg-orange w-[60%] text-white  " 
@@ -41,26 +45,30 @@ const Button = ({ buttonType, size ,value,...rest}) => {
         sizeStyle ="shadow h-12 w-64 bg-orange  text-white"
     }
    }
-    else if (buttonType == "iconButton"){
+    else if (buttontype == "iconButton"){
+      // value = Outlet;
       switch(size){
         case "small":
-            sizeStyle =" "
+            sizeStyle ="h-10 w-10 bg-lightorange rounded-full  mx-auto"
             break;
         case "medium":
-            sizeStyle =" "
+            sizeStyle ="h-12 w-12 bg-lightorange rounded-full "
 
         case "big":
             sizeStyle =" "
       }
 
-
     }
+    
 
+
+    
     // setValue(value)
 
     return (
       
-      <button className={sizeStyle}> {value} </button>
+      <button className={sizeStyle}><span className="pr-10">{value}</span></button>
+      
     );
   }
 
