@@ -39,9 +39,5 @@
         <input {...rest}  className={className} />      
         <p className="text-orange text-xs ">{errorMsg}</p>
       </div>)
-
-
     }
-
- 
 export default Input;

@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Users from './pages/Dashboard/admin/Users';
 import Home from './pages/Home';
 import SignUp from './pages/Registration/SignUp';
-import NotFound from './pages/NotFound/NotFound';
+import NotFound from './pages/NotFround/NotFound';
 import ProtectedRoute from './components/ProtectedRoute';
 import Settings from './pages/Dashboard/admin/Settings';
 import Orders from './pages/Dashboard/admin/Orders';

@@ -1,17 +1,23 @@
  import React from "react";
 import {FaAngleRight,FaArrowRight,FaAward,FaStar,FaAngleLeft} from "react-icons/fa";
+import Button from '../components/Button'
+
   
-class HomeMenu extends React.Component{
-render(){
+
+
+console.log(pizzaTypes);
+function HomeMenu(){
+
+
+
     return(  <div className="Menu_content" id="Menu">
-    <div className="Menu_title">
-      <div className="award">
-        <FaAward size="30px" />
-      </div>
-      <h2>What's on our Menu! </h2>
+    <div className="w-[60%] flex mx-auto">
+      <Button buttontype="iconButton" size="medium" value={<FaAward size={28}/>} position="ml-80" link="/singIn"/>  
+      <h2 className="mt-3 ml-3 text-[22px] font-bold">What's on our Menu! </h2>
+      
     </div>
 
-    <div className="Menu_body">
+    <div className="w-[96%] flex p-[30px] mx-auto items-center">
       <div className="card">
       <div className="bg-orange"></div>
         <img src={require("../assets/images/menu-1.png")}></img>
@@ -39,12 +45,7 @@ render(){
         <div className="price">$15</div>
         <div className="pizzy-name"> British Pizza</div>
       </div>
-      {/* <div className="card">
-        <img src={require("./images/menu-5.png")}></img>
-      </div>  
-      <div className="card">
-        <img src={require("./images/menu.png")}></img>
-      </div> */}
+     
     </div>
 
     <div className="Menu-footer">
@@ -54,6 +55,6 @@ render(){
   </div>)
 }
 
-}
+
 
 export default HomeMenu;

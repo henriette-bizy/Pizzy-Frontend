@@ -3,28 +3,7 @@ import { useState } from "react";
 import {Link, Outlet} from "react-router-dom"
 
 
-// class ButtonComponent extends React.Component{
-
-// render(){
-
-//     const bwidth = props.width;
-//     // const height = props.height;
-//     // const bgColor = props.color ? props.color : "orange"
-//     // const color = props.color ? this.props.color: "default"
-//     // const cursor = props.cursor ? this.props.cursor : "none"
-//     // const borderRadius = this.props.borderRadius ? this.props.borderRadius : "none"
-//     // const position = this.props.position ? this.props.position : "none";
-//     // const margin = this.props.margin ? this.props.margin : "none"
-//     // const float  = this.props.float ? this.props.float : "none"
-
-//     let btnStyle = '$bwidth'
-//     return (
-//         <button>
-
-//         </button>
-//     )
-
-const Button = ({ buttontype, size ,value,...rest}) => {
+const Button = ({ buttontype, size ,value,position,link,...rest}) => {
   let sizeStyle=""
   // let restStyles = Object.keys(...rest);
   // console.log(restStyles);
@@ -36,7 +15,7 @@ const Button = ({ buttontype, size ,value,...rest}) => {
         sizeStyle =" mt-5 mr-2 shadow h-10 w-32 bg-orange  text-white align-center rounded "
         break;
       case "medium":
-        sizeStyle ={...rest}+"shadow h-12 bg-orange w-[60%] text-white  " 
+        sizeStyle ={position}+"shadow h-12 bg-orange w-[60%] text-white  " 
         break;
       case "big":
         sizeStyle = {...rest}+" shadow h-12  bg-orange  text-white"
@@ -49,11 +28,12 @@ const Button = ({ buttontype, size ,value,...rest}) => {
       // value = Outlet;
       switch(size){
         case "small":
-            sizeStyle ="h-10 w-10 bg-lightorange rounded-full  mx-auto"
+            sizeStyle ="h-10 w-10 bg-lightorange rounded-full pl-3 "+position;
             break;
         case "medium":
-            sizeStyle ="h-12 w-12 bg-lightorange rounded-full "
-
+             
+            sizeStyle ="h-12 w-12 bg-lightorange rounded-full pl-3 "+position;
+            break;
         case "big":
             sizeStyle =" "
       }
@@ -64,10 +44,11 @@ const Button = ({ buttontype, size ,value,...rest}) => {
 
     
     // setValue(value)
-
+   console.log(sizeStyle);
+   console.log(link);
     return (
       
-      <button className={sizeStyle}><span className="pr-10">{value}</span></button>
+      <button className={sizeStyle}><Link to={link}><span className="">{value}</span></Link></button>
       
     );
   }

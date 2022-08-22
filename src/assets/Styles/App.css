@@ -83,7 +83,7 @@
     height: 300px;
 }
 
-.home_content .center_content {
+ .center_content {
     width: 35%;
     height: 200px;
     position: absolute;
@@ -91,10 +91,10 @@
     left: 33%;
     border: 1px solid black;
     border: 60px;
-    background-color: rgba(0, 0, 0, 0.432);
+    background-color: #0000006e;
 }
 
-.home_content .center_content p {
+ .center_content p {
     font-size: 30px;
     color: #ffa500;
     text-transform: capitalize;
@@ -103,23 +103,10 @@
     margin-bottom: 12px;
 
 }
-
 .wavy svg {
     position: absolute;
     top: 50%;
 }
-
-.arrow_right {
-    width: 40px;
-    height: 40px;
-    background-color: orange;
-    border-radius: 100px;
-    text-align: center;
-    line-height: 42px;
-    vertical-align: middle;
-    margin-left: 260px;
-}
-
 .pizzaHome {
     position: absolute;
     left: 35%;
@@ -127,7 +114,6 @@
 }
 
 .menu {
-    margin-top: 40px;
     display: flex;
     flex-direction: row;
     width: 80%;
@@ -280,7 +266,7 @@ flex-direction:row;
 padding: 30px;
 margin-left: 50px;
 }
-.Menu_body .card{   
+.card{   
 width: 20%;
 height:360px;
 /* border: 1px solid black; */

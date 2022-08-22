@@ -15,17 +15,6 @@ render(){
         </div>
          <h2>About us </h2>
         </div>
-{/*         
-                    <p>
-           We are Pizzy delivery shop, and as the name suggests it's all
-             about Pizza. (because cheese was expensive, we was not rich you know),
-              then baked in a pan, stove top style... (mama had no pizza oven).
-            <br></br>
-            <br></br>
-
-    */}
-    
-
     <p>
             Well, this tradition is still with our Little Italy Pizza Today!
              Only now we have lots and lots of cheese and a nice big oven. Mangia!
