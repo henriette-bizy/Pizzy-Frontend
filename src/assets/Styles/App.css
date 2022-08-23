@@ -10,7 +10,10 @@
     font-family: Poppins;
 }
     
-
+.small-texts{
+    font-size: 15px;
+    align-content: center;
+}
 .sidebar-height{
     height: 100vh;
 }
@@ -32,7 +35,7 @@
     float: left;
 }
 
-.navbar .logo h1 {
+ .logo h1 {
     color: orange;
     font-family: Tangerine;
     padding-left: 5px;
@@ -62,7 +65,7 @@
     text-decoration: none;
     color: orange;
     font-weight: bold;
-}
+}.sub-right-icon
 
 .navbar .nav-buttons {
     width: 20%;
@@ -188,7 +191,7 @@
 .form .part1 {
     width: 30%;
     height: inherit;
-    background-color: rgba(0, 0, 0, 0.062);
+    background-color: #00000010;
     float: left;
 }
 .form .part2{
@@ -266,6 +269,7 @@ flex-direction:row;
 padding: 30px;
 margin-left: 50px;
 }
+
 .card{   
 width: 20%;
 height:360px;
@@ -345,21 +349,15 @@ box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
  
- .About-content .About-title{
+  .About-title{
     display: flex;
     width: 100%;
     margin-bottom: 12px;
 }
-
-.About-content .About-title .Question{
-width: 40px;
-height: 40px;
-line-height: 42px;
-text-align: center;
-vertical-align: middle;
-background-color: orange;
-border-radius: 10px;
-margin-right: 20px;
+.About-title h2{
+    font-size:22px;
+    margin-top: 10px;
+    font-weight: bold;
 }
 .About-content .left-about{
     width: 35%;
@@ -555,8 +553,9 @@ margin-right: 20px;
     width: 100%;
     margin-top: 50px;
 }
-.Contact .Contact-right .Contact-right-form  .row{
-    width:100%;
+.Contact-right-intro  h1{
+     font-size: 22px;
+     text-transform: capitalize;
 }
  .Contact-right-form  .row  label{
     width: 100%;
@@ -566,8 +565,8 @@ margin-right: 20px;
 .Contact .Contact-right .Contact-right-form .row input{
 width: 63%;
 height: 45px;
-border: 1px solid rgb(128, 123, 123);
-box-shadow: 0 5px 6px 0 rgba(184, 107, 57, 0.19);
+border: 1px solid #807b7b;
+box-shadow: 0 5px 6px 0 rgba(184, 107, 57, 0.188);
 display: block;
 margin-bottom:15px;
 border-radius: 3px;

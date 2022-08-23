@@ -1,6 +1,8 @@
+import { positions } from "@mui/system";
 import React from "react";
 import {FaQuestion,FaPlay} from "react-icons/fa"
 import {ProgressBar,Step } from "react-step-progress-bar"
+import Button from "../components/Button";
 
 class HomeAbout extends React.Component{
 
@@ -10,10 +12,11 @@ render(){
         <div className="About-content">
         <div className="left-about">
         <div className="About-title">
-                <div className="Question">
+        {/* <div className="Question">
         <FaQuestion/>
-        </div>
-         <h2>About us </h2>
+        </div> */}
+        <Button buttontype="iconButton" size="medium" value={<FaQuestion size="23" />} position="mr-12" link="/signIn" />
+         <h2 className="">About us </h2>
         </div>
     <p>
             Well, this tradition is still with our Little Italy Pizza Today!
@@ -23,10 +26,11 @@ render(){
         </p> 
         
 
-        <div className="about-button">
+        {/* <div className="about-button">
             <FaPlay className="about-icon"/>
          <button> Watch a video</button>
-        </div>
+        </div> */}
+        <Button buttontype="submitButton" size="medium" value={"Watch a video"} link="/signIn" />
         </div>
 
 

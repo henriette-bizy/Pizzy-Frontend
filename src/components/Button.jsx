@@ -15,10 +15,10 @@ const Button = ({ buttontype, size ,value,position,link,...rest}) => {
         sizeStyle =" mt-5 mr-2 shadow h-10 w-32 bg-orange  text-white align-center rounded "
         break;
       case "medium":
-        sizeStyle ={position}+"shadow h-12 bg-orange w-[60%] text-white  " 
+        sizeStyle ="shadow h-12 bg-lightorange w-[60%] text-white " 
         break;
       case "big":
-        sizeStyle = {...rest}+" shadow h-12  bg-orange  text-white"
+        sizeStyle = "shadow h-12  bg-lightorange w-[80%] "+position;
         break
       default:
         sizeStyle ="shadow h-12 w-64 bg-orange  text-white"

@@ -66,7 +66,7 @@ window.addEventListener('scroll', changeBackground);
         
 
         {/* //buttonType, size ,value,...rest */}
-       <Button buttontype="submitButton" value = "SignIn" size="small" className="mt-7" link="/singIn"/> 
+       <Button buttontype="submitButton" value = "SignIn" size="small" className="mt-7" link="/signIn"/> 
         
       </div>
 

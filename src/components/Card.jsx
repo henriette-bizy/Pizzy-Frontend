@@ -1,11 +1,12 @@
-
-
-function Card(pizzaName,price,image){
-
+import React from "react";
+function Card({pizzaName,price,image}){
+  console.log( typeof image);
+  
 return(
+  
     <div className="card">
     <div className="bg-orange"></div>
-      <img src={require(image)}></img>
+      <img src={image}></img>
       <div className="price">{price}</div>
       <div className="pizzy-name">{pizzaName}</div>
     </div>    

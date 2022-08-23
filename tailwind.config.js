@@ -11,10 +11,10 @@ module.exports = {
       'lightdark': '#0000006e',
       'gray': '#6b7280',
       'lightorange': '#ffa500',
-      'red': '#dc2626',
+      'orangeshadow': '#b86b3930',
       'orange': '#f97316',
-      'bubble-gum': '#ff77e9',
-      'bermuda': '#78dcca',
+      'lightgrey': '#00000010',
+      'lightgray': '#807b7b',
       'lightblue':'#2563eb',
       
     },
@@ -29,6 +29,9 @@ module.exports = {
       },
       margin:{
        '100':'400px'
+      },
+      boxshadow:{
+         'orange':'0 1px 3px 0 rgba(184, 107, 57, 0.188)'
       }
     },
   },

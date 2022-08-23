@@ -60,25 +60,36 @@ const handleSubmit = async(event) =>{
 
   
   return(
-   <div>
-    <form className='w-[45%]  mx-auto my-24' onSubmit={handleSubmit}>
+      <div>
+
+    <a className="mt-12 pl-12 text-lightorange font-bold" href="/">
+    Home
+  </a>
+
+    <div className="w-[60%] h-[650px] mt-32 shadow mx-auto">
+      <div className="w-[30%] h-[650px] bg-orangeshadow float-left"></div>
+
+      <div className="w-[70%] h-[650px] float-right">
+      <h2 className="mt-12 mb-8 w-[30%] mx-auto font-bold">Sign In with <span className="">Pizzy</span></h2>
+    <form className='w-[80%]  mx-auto my-24' onSubmit={handleSubmit}>
     {submitted && loggedIn && <Navigate to='/admin/dashboard/home'/>}
       
      <div className='mx-auto w-[90%]' >
-     <Input  label="Email"  className="shadow h-12 w-[60%] mx-auto mb-2 " errorMsg="Please input your username "optional={false} value={values.userName}  type="text" onChange={handleUserName}/> 
-     <Input  label="Password"  className="shadow h-12 w-[60%] mx-auto mb-2" errorMsg="Please input your  password "optional={false} value={values.password}  type="password" onChange={handlePassword}/> 
-     <Button value="Send" buttontype="submitButton" size="medium" className="w-[60%]"/> 
+     <Input  label="Email"  className="shadow h-12 w-[80%] mx-auto mb-2 " errorMsg=" "optional={false} value={values.userName}  type="text" onChange={handleUserName}/> 
+     <Input  label="Password"  className="shadow h-12 w-[80%] mx-auto mb-2" errorMsg=""optional={false} value={values.password}  type="password" onChange={handlePassword}/> 
+     <Button value="Send" buttontype="submitButton" size="big" position=" mt-12" link=""/> 
+     <div className='flex'>
+     <span className="small-texts text-lightgray w-[40%] float-left underline"><a href="/signIn">Forgot Password?</a></span>
+     <span className="small-texts text-lightgray w-[40%] underline"><a href="/signUp">Don't have an account?</a></span>
+     </div>
       </div>
         </form>
+   </div>
+   </div>
    </div>
   )
  
 }
 
 export default SignIn;
-
-
-// SignIn.propTypes = {
-//   setToken:PropTypes.func.isRequired
-// }
 
