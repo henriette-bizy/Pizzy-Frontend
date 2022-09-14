@@ -5,6 +5,7 @@ import Input from '../../components/Input';
 import {saveToken} from '../../useToken'
 import { Navigate } from 'react-router-dom'
 import Button from '../../components/Button'
+
 function SignIn(){
    
  const [values, setValues] = useState({
@@ -30,18 +31,23 @@ const handlePassword = (event) =>{
 }
 const [submitted, setSubmitted] = useState(false)
 // const[valid, setValid] =  useState(false);
-const handleSubmit = async(event) =>{
 
+
+
+const handleSubmit = async(event) =>{
+    const credentials ={
+      userEmail:values.userName,
+      userPassword:values.password
+      }
     event.preventDefault()
-    console.log(values.userName,values.password);
-     const  token = await  _logIn("https://order-pizza-api.herokuapp.com/api/auth", {username:values.userName,password:values.password});
-    localStorage.setItem('token',JSON.stringify(token));
+     const  token = await _logIn("http://localhost:4000/login", credentials);
+     console.log(token);
+    localStorage.setItem('token',JSON.stringify(token.data));
   setSubmitted(true)
     saveToken(token);
-    setLoggedIn(true);
-   
+    setLoggedIn(true); 
   }
- ;
+;
 
 
  //function for handling out errors of the inputs

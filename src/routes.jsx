@@ -27,7 +27,7 @@ return(
     <Route path ='/admin/dashboard/statistics' element = {<Statistics />}></Route>
     <Route path ='/admin/dashboard/orders' element = {<Orders/>}></Route>
     <Route path ='/admin/dashboard/home' element = {<DashHome/>}></Route>
-    <Route path='/admin/dashboard/users' eleement={<Users/>} />
+    <Route path='/admin/dashboard/users' element={<Users/>} />
     </Route>
    
     <Route path = '*' element = {<NotFound />}></Route>

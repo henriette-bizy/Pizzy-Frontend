@@ -2,6 +2,7 @@ import { DataGrid, GridRowsProp, GridColDef } from '@mui/x-data-grid';
 function Table(){
 
   const  rows  = [
+
     {
          id:1 , col1:"Henriette Majura",col2:"Active", col3:"hopebiziyaremye@gmail.com", col4:"delete",col5:"update"
     },
@@ -18,7 +19,6 @@ function Table(){
 
 
     { field: 'col1', headerName: 'Names', width: 250 , headerClassName:'bg-lightorange' },
-    { field: 'col2', headerName: 'Status', width: 178, headerClassName:'bg-lightorange',cellClassName:'text-green'},
     { field: 'col3', headerName: 'Email', width: 320, headerClassName:'bg-lightorange'},
     { field: 'col4', headerName: 'Update', width: 200,headerClassName:'bg-lightorange',cellClassName:'text-red'},
     { field: 'col5', headerName: 'Delete', width: 200,headerClassName:'bg-lightorange',cellClassName:'text-lightblue'},
