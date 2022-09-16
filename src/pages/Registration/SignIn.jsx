@@ -35,6 +35,10 @@ const [submitted, setSubmitted] = useState(false)
 
 
 const handleSubmit = async(event) =>{
+
+
+
+  console.log("sending ...")
     const credentials ={
       userEmail:values.userName,
       userPassword:values.password
@@ -83,7 +87,7 @@ const handleSubmit = async(event) =>{
      <div className='mx-auto w-[90%]' >
      <Input  label="Email"  className="shadow h-12 w-[80%] mx-auto mb-2 " errorMsg=" "optional={false} value={values.userName}  type="text" onChange={handleUserName}/> 
      <Input  label="Password"  className="shadow h-12 w-[80%] mx-auto mb-2" errorMsg=""optional={false} value={values.password}  type="password" onChange={handlePassword}/> 
-     <Button value="Send" buttontype="submitButton" size="big" position=" mt-12" link=""/> 
+     <Button value="Send" buttontype="submitButton" size="big" position=" mt-12" link="" type="submit"/>
      <div className='flex'>
      <span className="small-texts text-lightgray w-[40%] float-left underline"><a href="/signIn">Forgot Password?</a></span>
      <span className="small-texts text-lightgray w-[40%] underline"><a href="/signUp">Don't have an account?</a></span>

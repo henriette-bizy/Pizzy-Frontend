@@ -48,7 +48,7 @@ const Button = ({ buttontype, size ,value,position,link,...rest}) => {
    console.log(link);
     return (
       
-      <button className={sizeStyle}><Link to={link}><span className="">{value}</span></Link></button>
+      <button className={sizeStyle} {...rest}><Link to={link}><span className="">{value}</span></Link></button>
       
     );
   }
