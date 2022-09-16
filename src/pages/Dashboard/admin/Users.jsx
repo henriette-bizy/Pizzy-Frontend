@@ -21,7 +21,7 @@ useEffect(()=>{
   
       fetchData();
     },[])
-
+  }
   
     
     console.log(users)
@@ -44,4 +44,4 @@ useEffect(()=>{
     </div>
     )
 
-export default Users;
+export default Users
