@@ -25,8 +25,14 @@ export async function _logIn(url='',data = {}){
 export async function getUsers(url){
 
    const response = await axios 
-   .get(url)
+   
    .then(res=>{
     console.log(res)
    })
+}
+
+
+export async function getUser(url, id){
+    const response = await getaxios(url,id)
+
 }
